@@ -1,0 +1,21 @@
+#include <iostream>
+#include <string>
+#include <cmath>
+using namespace std;
+
+int main(){
+    
+    int numbers = 12345;
+    
+    int revnumber = 0;
+    
+    while(numbers){
+        
+        revnumber = revnumber * 10 + numbers % 10;
+        
+        numbers /= 10;
+    }
+    
+    cout << "Reverse Numbers :" << revnumber;
+    return 0;
+}
