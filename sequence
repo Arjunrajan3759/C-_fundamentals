@@ -1,0 +1,26 @@
+// You are using GCC
+#include <iostream>
+using namespace std;
+
+class A{
+    public:
+    int n;
+    
+    void Sequence(){
+        for(int i = 0; i < n ; i++){
+            int num = (i % 6) + 1;
+            cout << num << " ";
+        }
+        cout << endl;
+    }
+};
+
+int main(){
+    A a;
+    
+    cin >> a.n;
+    
+    a.Sequence();
+    
+    return 0;
+}
