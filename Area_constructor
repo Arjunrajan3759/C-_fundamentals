@@ -1,0 +1,38 @@
+// You are using GCC
+#include <iostream>
+using namespace std;
+
+class Wall{
+    public:
+    double a;
+    double b;
+    
+    Wall(double x , double y){
+        a = x;
+        b = y;
+    }
+    
+    double Area(){
+        return a * b;
+    }
+};
+
+int main(){
+    
+    double a1, b1, a2, b2;
+    
+    cin >> a1 >> b1;
+    
+    cin >> a2 >> b2;
+    
+    Wall W1(a1,b1);
+    Wall W2(a2,b2);
+    
+    double area1 = W1.Area();
+    double area2 = W2.Area();
+    
+    cout << "Area of Wall 1: " << area1 << "\n";
+    cout << "Area of Wall 2: " << area2;
+    
+    return 0;
+}
